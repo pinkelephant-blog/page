@@ -3,17 +3,19 @@ on:
   schedule:
     # nightly (0th hour 0th minute of every day)
     - cron: '0 0 * * *'
-
+  workflow_dispatch: 
+    inputs:
+    
 jobs:
   build:
     runs-on: ubuntu-latest
+    env: # Or as an environment variable
+      REPO_CLONE_URL: ${{ secrets.REPO_CLONE_URL }}
+      ACTIONS_TOKEN_OVERWRITE: ${{ secrets.ACTIONS_TOKEN_OVERWRITE }}
     steps:
-      - name: Mirror
-        run: |
-          git clone --mirror "$REPO_CLONE_URL" page.git
-          cd page.git/
-          git remote add github "https://$GITHUB_ACTOR:$ACTIONS_TOKEN_OVERWRITE@github.com/$GITHUB_REPOSITORY.git"
-          git push --mirror github
-        env: 
-          ACTIONS_TOKEN_OVERWRITE: ${{ secrets.ACTIONS_TOKEN_OVERWRITE }}
-          REPO_CLONE_URL: ${{ secrets.REPO_CLONE_URL }}
+    - name: Mirror
+      run: |
+        git clone --mirror "$REPO_CLONE_URL" page.git
+        cd page.git
+        git remote add github "https://$GITHUB_ACTOR:$ACTIONS_TOKEN_OVERWRITE@github.com/$GITHUB_REPOSITORY.git"
+        git push --mirror github
