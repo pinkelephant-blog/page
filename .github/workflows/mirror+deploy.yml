@@ -20,6 +20,6 @@ jobs:
         git remote add github "https://$GITHUB_ACTOR:$ACTIONS_TOKEN_OVERWRITE@github.com/$GITHUB_REPOSITORY.git"
         git push --mirror github
     - name: Deploy
-    - uses: enriikke/gatsby-gh-pages-action@v2
-      with:
-        access-token: ${{ secrets.ACCESS_TOKEN }}
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
