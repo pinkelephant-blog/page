@@ -19,6 +19,8 @@ jobs:
         cd page.git
         git remote add github "https://$GITHUB_ACTOR:$ACTIONS_TOKEN_OVERWRITE@github.com/$GITHUB_REPOSITORY.git"
         git push --mirror github
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Deploy
       uses: enriikke/gatsby-gh-pages-action@v2
       with:
