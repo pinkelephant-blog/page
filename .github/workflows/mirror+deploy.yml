@@ -1,4 +1,4 @@
-name: Mirror Repo
+name: Mirror + Deploy Repo
 on: 
   schedule:
     # nightly (0th hour 0th minute of every day)
@@ -19,3 +19,7 @@ jobs:
         cd page.git
         git remote add github "https://$GITHUB_ACTOR:$ACTIONS_TOKEN_OVERWRITE@github.com/$GITHUB_REPOSITORY.git"
         git push --mirror github
+    - name: Deploy
+    - uses: enriikke/gatsby-gh-pages-action@v2
+      with:
+        access-token: ${{ secrets.ACCESS_TOKEN }}
