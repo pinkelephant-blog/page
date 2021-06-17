@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Privater Blog`,
     author: {
-      name: `Kyle Mathews`,
+      name: `Jemandem`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A private blog for anyone who is interested in random stuff`,
+    siteUrl: `https://pinkelephant.cf/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ghostwriter`,
     },
   },
   plugins: [
@@ -112,13 +112,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Mein Blog`,
+        short_name: `Mein Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/pinkelephant.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
