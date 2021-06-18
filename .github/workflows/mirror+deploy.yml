@@ -15,10 +15,10 @@ jobs:
     steps:
     - name: Mirror
       run: |
-        git clone --mirror "$REPO_CLONE_URL" page.git
-        cd page.git
-        git remote add github "https://$GITHUB_ACTOR:$ACTIONS_TOKEN_OVERWRITE@github.com/$GITHUB_REPOSITORY.git"
-        git push --mirror github
+          git clone -b master "$REPO_CLONE_URL" master.git
+          cd master.git
+          git remote add github "https://$GITHUB_ACTOR:$ACTIONS_TOKEN_OVERWRITE@github.com/$GITHUB_REPOSITORY.git"
+          git push github master
     - name: Checkout
       uses: actions/checkout@v2
     - name: Deploy
