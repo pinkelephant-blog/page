@@ -21,6 +21,8 @@ jobs:
           git push github master
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        ref: 'master'
     - name: Deploy
       uses: enriikke/gatsby-gh-pages-action@v2
       with:
