@@ -25,7 +25,9 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © 2021 - {new Date().getFullYear()}, Alle Rechte vorbehalten. Nach §55 RStV für ausschließlich persönliche, nicht-geschäftliche Zwecke von der Impressumspflicht gemäß §5 TMG ausgenommen.
+        © 2021 - {new Date().getFullYear()}, Alle Rechte vorbehalten. <br />
+        Nach §55 RStV für ausschließlich persönliche, nicht-geschäftliche Zwecke
+        von der Impressumspflicht gemäß §5 TMG ausgenommen.
       </footer>
     </div>
   )
