@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Privater Blog`,
+    title: `Mein Blog`,
     author: {
       name: `Jemandem`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `mit Liebe zur Weisheit.`,
     },
-    description: `A private blog for anyone who is interested in random stuff`,
+    description: `Ein Blog für Geisteswissenschaftler`,
     siteUrl: `https://pinkelephant.cf/`,
     social: {
       twitter: `ghostwriter`,

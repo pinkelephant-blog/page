@@ -1,7 +1,7 @@
 ---
 title: WW-MIK T54
 date: "2020-06-19T00:46:37.121Z"
-description: "WW-MIK T54"
+description: "WW-MIK T54 - homothetische Präferenzen"
 ---
 
 ![./untitled.png](./untitled.png)
@@ -198,7 +198,3 @@ Notwendige Güter werden bei größerem nur noch gering mehr nachgefragt, da sie
 ![./desmos-graph-3.png](./desmos-graph-3.png)
 
 Engel-Kurve für inferiore Güter. Die nachgefragte Menge sinkt mit zunehmendem Einkommen.
-
----
-
-*Mai 2021 Anna Schütze, Julius Schmidt*
