@@ -1,8 +1,3 @@
----
-title: WW-MIK T54
-date: "2020-06-19T00:46:37.121Z"
-description: "WW-MIK T54 - homothetische Präferenzen"
----
 
 ![./untitled.png](./untitled.png)
 

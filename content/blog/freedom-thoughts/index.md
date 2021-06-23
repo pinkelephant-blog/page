@@ -1,5 +1,5 @@
 ---
-title: Was ist Freiheit? Und was menschlich?
+title: Gedankenexperimente?
 date: "2021-06-23T11:46:37.121Z"
 description: "Kann ich Hass hassen?"
 ---
